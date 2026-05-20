@@ -1,0 +1,7 @@
+tunnel: e7fefaa7-9387-4900-8d1f-422bcdf71c7c
+credentials-file: C:\Users\Faizan Rahman\.cloudflared\e7fefaa7-9387-4900-8d1f-422bcdf71c7c.json
+
+ingress:
+  - hostname: cal.sibu.org.my
+    service: http://localhost:3000
+  - service: http_status:404

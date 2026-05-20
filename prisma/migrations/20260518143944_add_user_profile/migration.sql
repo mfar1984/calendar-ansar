@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE `user` ADD COLUMN `notifyEmail` BOOLEAN NOT NULL DEFAULT true,
+    ADD COLUMN `notifySms` BOOLEAN NOT NULL DEFAULT false,
+    ADD COLUMN `phone` VARCHAR(191) NULL;
