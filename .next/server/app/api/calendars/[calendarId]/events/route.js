@@ -1,0 +1,11 @@
+var R=require("../../../../../chunks/[turbopack]_runtime.js")("server/app/api/calendars/[calendarId]/events/route.js")
+R.c("server/chunks/[root-of-the-server]__0d1hp9-._.js")
+R.c("server/chunks/[root-of-the-server]__0op9af~._.js")
+R.c("server/chunks/node_modules_next_124cnn1._.js")
+R.c("server/chunks/[root-of-the-server]__0x_euji._.js")
+R.c("server/chunks/_0kaphcf._.js")
+R.c("server/chunks/_02c1z33._.js")
+R.c("server/chunks/node_modules_next_dist_0npcise._.js")
+R.c("server/chunks/0zjb_server_app_api_calendars_[calendarId]_events_route_actions_0x11-os.js")
+R.m(93274)
+module.exports=R.m(93274).exports

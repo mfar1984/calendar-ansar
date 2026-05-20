@@ -1,0 +1,3 @@
+{
+  "/api/caldav/[...path]/route": "app/api/caldav/[...path]/route.js"
+}

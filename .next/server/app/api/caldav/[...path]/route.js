@@ -1,0 +1,12 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/caldav/[...path]/route.js")
+R.c("server/chunks/[root-of-the-server]__0-fu5-t._.js")
+R.c("server/chunks/node_modules_next_dist_esm_build_templates_app-route_0qufuq9.js")
+R.c("server/chunks/_02c1z33._.js")
+R.c("server/chunks/src_lib_ics_ts_0hqgc-7._.js")
+R.c("server/chunks/node_modules_next_dist_0npcise._.js")
+R.c("server/chunks/_0kaphcf._.js")
+R.c("server/chunks/[root-of-the-server]__0op9af~._.js")
+R.c("server/chunks/node_modules_next_124cnn1._.js")
+R.c("server/chunks/_next-internal_server_app_api_caldav_[___path]_route_actions_0mos9w0.js")
+R.m(93458)
+module.exports=R.m(93458).exports
