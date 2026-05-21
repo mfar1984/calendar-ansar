@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+node_modules.zip
+*.zip
 /.pnp
 .pnp.*
 .yarn/*
@@ -23,6 +25,16 @@
 # misc
 .DS_Store
 *.pem
+*.log
+
+# deployment scripts
+deploy-to-production.bat
+deploy-production.ps1
+
+# documentation (optional - remove if you want to commit these)
+DEPLOYMENT.md
+AGENTS.md
+CLAUDE.md
 
 # debug
 npm-debug.log*
