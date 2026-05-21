@@ -25,8 +25,11 @@ export function verifyToken(token: string): SessionUser | null {
 export async function getSession(): Promise<SessionUser | null> {
   const cookieStore = await cookies();
   const token = cookieStore.get("auth_token")?.value;
+  console.log('[getSession] Cookie found:', !!token);
   if (!token) return null;
-  return verifyToken(token);
+  const session = verifyToken(token);
+  console.log('[getSession] Token verified:', !!session);
+  return session;
 }
 
 export async function requireAuth(): Promise<SessionUser> {

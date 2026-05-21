@@ -41,13 +41,19 @@ export async function POST(request: NextRequest) {
 
     const token = signToken({ id: user.id, email: user.email, name: user.name });
     const cookieStore = await cookies();
+    
+    // Determine if we're in production (HTTPS)
+    const isProduction = process.env.NODE_ENV === 'production';
+    
     cookieStore.set("auth_token", token, {
       httpOnly: true,
-      secure: true,
+      secure: isProduction, // Only require HTTPS in production
       sameSite: "lax",
       maxAge: 60 * 60 * 24 * 7,
       path: "/",
     });
+
+    console.log('[Login] Cookie set for user:', user.email, 'isProduction:', isProduction);
 
     return Response.json({
       user: { id: user.id, email: user.email, name: user.name },

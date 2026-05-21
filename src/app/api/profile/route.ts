@@ -32,7 +32,12 @@ export async function GET() {
 // PATCH /api/profile
 export async function PATCH(request: NextRequest) {
   try {
+    console.log('[PATCH /api/profile] Request received');
+    console.log('[PATCH /api/profile] Headers:', Object.fromEntries(request.headers.entries()));
+    
     const session = await requireAuth();
+    console.log('[PATCH /api/profile] Session verified:', session.id);
+    
     const { name, phone, notifyEmail, notifySms, currentPassword, newPassword } =
       await request.json();
 
